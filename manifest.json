@@ -1,0 +1,12 @@
+{
+  "name": "goto-github",
+  "version": "0.1",
+  "description": "goto-github",
+  "browser_action": {
+      "default_icon": "images/icon.ico",
+      "popup": "pages/popup.html"
+  },
+  "permissions": [
+      "tabs", "https://github.com/"
+  ]
+}

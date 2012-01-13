@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+body {
+  min-width:357px;
+  overflow-x:hidden;
+}
+
+img {
+  margin:5px;
+  border:2px solid black;
+  vertical-align:middle;
+  width:75px;
+  height:75px;
+}
+</style>
+<title></title>
+<script>
+
+  function go(){
+    chrome.tabs.create({url: 'https://github.com/' + document.getElementById('repo').value});
+    window.close();
+  }
+
+</script>
+</head>
+<body>
+<form onsubmit="go();"><input id="repo" name="repo"/><input type='submit' value="go"/></form>
+</body>
+</html>
